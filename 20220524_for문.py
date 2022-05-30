@@ -107,7 +107,7 @@ print(sum(l))
 print(max(l))
 print(min(l))
 print(sum(l)/len(l))
-
+#변수이름 조심 해야함 
 
 for i in range(1, 10):
     print(f'2 * {i} = {2*i}')
