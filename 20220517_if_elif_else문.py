@@ -82,7 +82,7 @@
 #     print('10이하')
 
 #문제7
-#아이디, 패스워드 검사 프로그램
+#아이디, 패스워드 검사 프로그램..
 name = 'yes25'
 IPBa = 'yes25cho'
 PasswordBa = "Varonica0106"
