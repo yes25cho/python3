@@ -10,20 +10,27 @@ print()
 # 2. 학번 -> 학년, 반, 학과, 번호 출력하기
 student_number = '2204'
 #>> 2학년 1반 뉴미디어소프트웨어과 08번
-print(f'{student_number[0]}학년 {student_number[1]}반 뉴미디어소프트웨어과{student_number[2:]}번')
+majors = ['', '뉴미디어소프트웨어과', '뉴미디어소프트웨어과',
+     '뉴미디어웹솔루션과', '뉴미디어웹솔루션과', '뉴미디어디자인과', '뉴미디어디자인과']
+index = int(student_number[1])
+g = majors[index]
 #>> 2학년 1반 뉴미디어소프트웨어과 8번
 if student_number[-2] =='0':
-    print(f'{student_number[0]}학년 {student_number[1]}반 뉴미디어소프트웨어과{student_number[3:]}번')
+    print(f'{student_number[0]}학년 {student_number[1]}반 {g}{student_number[3:]}번')
 else:
-    print(f'{student_number[0]}학년 {student_number[1]}반 뉴미디어소프트웨어과{student_number[2:]}번')
+    print(f'{student_number[0]}학년 {student_number[1]}반 {g}{student_number[2:]}번')
 #-> if문 안쓰고
-
+print(f'{student_number[0]}학년 {student_number[1]}반 {g}{int(student_number[2:])}번')
 
 #3. N-sum
 number = 331
-str_num = str(number)
-for i in str_num:
-    print(i)
+나머지 = 0
+while number!=0:
+    나머지 += number % 10
+    number = number //10
+print(나머지)
+
+
 
 #4. 1~100 396게임을 출력
 # i=1
