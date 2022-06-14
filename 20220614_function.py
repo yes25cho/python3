@@ -69,3 +69,9 @@ def my_print6(name,*args):
     print(args)
 
 my_print5('안유진', 20, '아이브 ', '러브 다이브 ')
+# def my_print7(name, age=10, group):
+#     print(name + ' : ' + str(age) + '살 입니다.' + group + '소속입니다.')
+#     print(name, ':', age, '살 입니다.', group, '소속입니다.')
+#     print(f'{name} : {age}살 입니다.{group}소속입니다.')
+#
+# my_print7('안유진', 20, '아이브 ', '러브 다이브 ')
