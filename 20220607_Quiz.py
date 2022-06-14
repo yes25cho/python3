@@ -64,3 +64,14 @@ for number in range(1, 101): #1~100
     else:
         print('짝'* countN)
 print()
+
+for number in range(1, 101): #1~100
+    number_s = str(number)
+    countN = 0
+    countN += number_s.count('3')
+    countN += number_s.count('6')
+    countN += number_s.count('9')
+    if countN == 0:
+        print(number)
+    else:
+        print('짝'* countN)
