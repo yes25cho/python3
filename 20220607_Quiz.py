@@ -75,3 +75,10 @@ for number in range(1, 101): #1~100
         print(number)
     else:
         print('짝'* countN)
+
+def gugudan(i=2):
+    for number in range(1, 9+1):
+        print(f'{i}*{number}={i*number}')
+
+gugudan()
+gugudan(5)
