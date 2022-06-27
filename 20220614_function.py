@@ -75,3 +75,67 @@ my_print5('안유진', 20, '아이브 ', '러브 다이브 ')
 #     print(f'{name} : {age}살 입니다.{group}소속입니다.')
 #
 # my_print7('안유진', 20, '아이브 ', '러브 다이브 ')
+
+print('-'*10)
+
+def say(name, msg='안녕하세요', feeling='🍳🍳'):
+    print(f'{name}, {msg} {feeling}')
+say('가현')
+say('가현', feeling="😴")
+
+print('-'*20)
+def fn(a, b=[]):
+    b.append(a)
+    print(b)
+fn(3)
+fn(5)
+fn(10, [1])
+print('-'*20)
+say('현진', '미안해')
+
+def plus20(age):
+    return age+2
+a = plus20(20)
+print(a) #one:
+
+print('-'*20)
+def tel(number):
+    index = number.find('-')
+    f= number[:index]
+    b= number[-4:]
+    return f, b #(f, b)인 튜플을 보내는 것이다
+# front = '0101'
+# back = '5678'
+front, back = tel('010-1234-5678')
+print(f'앞 : {front}\t뒤 : {back}')
+print('-'*20)
+#
+# def min_max(리스트):
+#     minV = 리스트[0]
+#     for n in range(1,6):
+#         if(minV>리스트[n]):
+#             minV = 리스트[n]
+#     maxV = 리스트[0]
+#     for n in range(1,6):
+#         if (maxV < 리스트[n]):
+#             maxV = 리스트[n]
+#     return minV, maxV
+
+def min_max(*리스트):      #기변인자로 튜플로 들어 온다
+    minV = 리스트[0]
+    maxV = 리스트[0]
+    for n in 리스트[1:]:
+        if minV>n:
+            minV = n
+        elif maxV < n:
+            maxV = n
+    return minV, maxV
+#min_max([3, 31, 1, 6, 5, -6])
+# def min_max(리스트):
+#     minV =min(리스트)
+#     maxV=max(리스트)
+#     return minV, maxV
+min_value, max_value = min_max(3, 31, 1, 6, 5, -6)
+print(f'{min_value}, {max_value}')
+
+#count, sum, min, max 알아야 함
