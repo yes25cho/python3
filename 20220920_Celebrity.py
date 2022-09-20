@@ -30,6 +30,7 @@ class Singer(Celebrity):
 print(태민)
 print(태민.song)
 
+
 class Actor(Celebrity):
     def __init__(self, name):
         super().__init__(name)
