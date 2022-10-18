@@ -16,16 +16,16 @@ class Student:
 # 속성 : 동아리명, 장소, 멤버들
 # 메소드 : 장소 설정하자(), 멤버 추가하자(), 활동하자()
 class Club:
-    count = 0
+    count = 0       #클래스 변수
 
-    @classmethod
+    @classmethod        #클래스 함수
     def get_count_club(cls):
         return f'동아리 개수 : {Club.count}'
 
     def __init__(self, name):
-        self.name = name
-        self.location = None
-        self.members = []
+        self.name = name        #동아리이름
+        self.location = None    #장소
+        self.members = []       #멤버들
         Club.count += 1
 
     def __str__(self):
