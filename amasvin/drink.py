@@ -56,6 +56,7 @@ class Drink:
         self.set_cup_size()
         self.set_sugars()
         self.set_ice()
+
 if __name__ == '__main__':
     음료1 = Drink('아메리카노', 1800)
     음료1.order()
