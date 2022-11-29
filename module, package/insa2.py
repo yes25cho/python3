@@ -1,4 +1,4 @@
 import hello2
-import hello_func
+import hello_func as h
 
-hello_func.hello()
+h.hello()
